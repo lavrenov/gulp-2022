@@ -1,0 +1,16 @@
+src/scss/fonts.scss
+dist
+*.zip
+node_modules
+package-lock.json
+gulp/config/ftp.js
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea
+.vscode
+ehthumbs.db
+Thumbs.db
