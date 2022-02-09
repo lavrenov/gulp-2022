@@ -4,6 +4,7 @@ dist
 node_modules
 package-lock.json
 gulp/config/ftp.js
+gulp/version.json
 
 .DS_Store
 .DS_Store?
