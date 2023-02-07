@@ -9,6 +9,8 @@ global.app = {
     path: path,
     gulp: gulp,
     plugins: plugins,
+    webp: false,
+    groupCssMedia: false,
 }
 
 import { copy } from "./gulp/tasks/copy.js";
@@ -23,6 +25,7 @@ import { svg } from "./gulp/tasks/svg.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
 import { favicon } from "./gulp/tasks/favicon.js";
+import groupCssMediaQueries from "gulp-group-css-media-queries";
 
 function watcher() {
     gulp.watch(path.watch.files, copy);

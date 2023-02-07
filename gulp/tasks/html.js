@@ -23,7 +23,7 @@ export const html = () => {
         .pipe(app.plugins.if(app.isBuild, app.plugins.replace(".js", ".min.js")))
         .pipe(
             app.plugins.if(
-                app.isBuild,
+                app.isBuild && app.webp,
                 webpHtmlNosvg()
             )
         )

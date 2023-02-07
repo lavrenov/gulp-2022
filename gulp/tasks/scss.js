@@ -22,13 +22,13 @@ export const scss = () => {
         }))
         .pipe(
             app.plugins.if(
-                app.isBuild,
+                app.isBuild && app.groupCssMedia,
                 groupCssMediaQueries()
             )
         )
         .pipe(
             app.plugins.if(
-                app.isBuild,
+                app.isBuild && app.webp,
                 webpcss({
                     webpClass: ".webp",
                     noWebpClass: ".no-webp",
