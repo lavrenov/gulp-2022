@@ -16,6 +16,7 @@ export const html = () => {
             return JSON.parse(fs.readFileSync(app.path.src.data));
         }))
         .pipe(pug({
+            doctype: 'html',
             pretty: true,
             verbose: true,
         }))
